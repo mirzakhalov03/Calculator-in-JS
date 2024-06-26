@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+  <div class="info">
+    <h3>Instructions</h3>
+    <ul>
+      <li>Red button for closing the calculator</li>
+      <li>Yellow button for minimizing screen</li>
+      <li>Green is yet in development!!!</li>
+      <li>AC is for reset</li>
+      <li>All operations can be carried out</li>
+      <li>If minimized, results are saved</li>
+      <li>If closed with red, results are reset</li>
+      <li><span>If you closed with red button, double click the icon</span></li>
+
+      
+    </ul>
+  </div>
+  <button class="calculator-opener" id="calculator-opener">
+    <img src="./calculator-2017-10-10.avif" alt="">
+  </button>
+  <div class="wrapper">
+    <div class="three-btns">
+      <div id="exit-btns" class="exit-btns red"></div>
+      <div id="exit-btns" class="exit-btns yellow"></div>
+      <div id="exit-btns" class="exit-btns green"></div>
+    </div>
+    <form id="form">
+      <input type="number" id="form-input" readonly>
+    </form>
+    <div class="functions">
+      <div class="main-func">
+        <div class="btn-func gray-style" id="btn-reset">AC</div>
+        <div class="btn-func gray-style" id="btn-func">+/-</div>
+        <div class="btn-func gray-style" id="btn-func">%</div>
+        <div class="btn-func orange-style" id="btn-func">/</div>
+        <div class="btn-func" id="btn-num">7</div>
+        <div class="btn-func" id="btn-num">8</div>
+        <div class="btn-func" id="btn-num">9</div>
+        <div class="btn-func orange-style" id="btn-func">X</div>
+        <div class="btn-func" id="btn-num">4</div>
+        <div class="btn-func" id="btn-num">5</div>
+        <div class="btn-func" id="btn-num">6</div>
+        <div class="btn-func orange-style" id="btn-func">-</div>
+        <div class="btn-func" id="btn-num">1</div>
+        <div class="btn-func" id="btn-num">2</div>
+        <div class="btn-func" id="btn-num">3</div>
+        <div class="btn-func orange-style" id="btn-func">+</div>
+      </div>
+      <div class="bottom-btns">
+        <div class="btn-zero" id="btn-num">0</div>
+        <div class="btn-last" id="btn-func">,</div>
+        <div class="btn-last orange-style" id="btn-func">=</div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/app.js"></script>
+</body>
+</html>
